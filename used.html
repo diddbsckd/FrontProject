@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gardener - Gardening Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <a href="index.html" class="h-100 d-inline-flex align-items-center me-4">
+                    <img width="50" height="50" src=img/cucumber.png /><div style="color: white; font-size: 30px;">CUCUMBER MARKET</div>
+                </a>
+                <div class="h-100 d-inline-flex align-items-center">
+                    
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span></span>
+                    <a class="btn btn-link text-light" href="https://www.facebook.com/daangn"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.youtube.com/channel/UC8tsBsQBuF7QybxgLmStihA"><i class="bi bi-youtube"></i></a>
+                    <a class="btn btn-link text-light" href="https://blog.naver.com/daangn"><img src="img/btnW_아이콘원형.png" width="15px"/></a>
+                    <a class="btn btn-link text-light" href="https://www.instagram.com/daangnmarket/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">오이마켓</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">홈</a>
+                <a href="used.html" class="nav-item nav-link active">중고거래</a>
+                <a href="part-time-job.html" class="nav-item nav-link">알바</a>
+                <a href="real-estate.html" class="nav-item nav-link">부동산직거래</a>
+                <div class="nav-item dropdown">
+                    
+                       
+                    </div>
+                </div>
+                
+            </div>
+            <a href="로그인.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">로그인<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                
+                <h1 class="display-5 mb-5">중고거래 인기매물</h1>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">전체</li>
+                        <li class="mx-2" data-filter=".전자기기">전자기기</li>
+                        <li class="mx-2" data-filter=".가구">가구</li>
+                        <li class="mx-2" data-filter=".의류">의류</li>
+                        <li class="mx-2" data-filter=".가전">가전</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-3 col-md-6 portfolio-item 전자기기 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/갤럭시 워치41.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/갤럭시 워치4.jpg" data-lightbox="portfolio1"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">갤럭시 워치 4 필요하신분 ☺️</h4>
+                        <div class="card-price ">
+                          50,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 관악구 난곡동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 29
+                            </span>
+                          ∙
+                          <span>
+                              채팅 28
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가구 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/철제선반1.jpg" alt="" width="400px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/철제선반.jpg" data-lightbox="portfolio2"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">깨끗한 철제선반 팝니다.</h4>
+                        <div class="card-price ">
+                          85,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 강동구 성내동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 5
+                            </span>
+                          ∙
+                          <span>
+                              채팅 7
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 의류 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/멜번 골프모자1.jpg" alt="" width="400px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/멜번 골프모자.jpg" data-lightbox="portfolio3"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">어디에나 쓰기좋은 골프모자 팔아요!!</h4>
+                        <div class="card-price ">
+                          30,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 송파구 풍납동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 2
+                            </span>
+                          ∙
+                          <span>
+                              채팅 3
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가전 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/삼성 코드제로 청소기1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/삼성 코드제로 청소기.jpg" data-lightbox="portfolio4"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">삼성 코드제로 이사가면서 싸게 내놓습니다</h4>
+                        <div class="card-price ">
+                          40,000원
+                        </div>
+                        <div class="card-region-name">
+                          경기 하남시
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 20
+                            </span>
+                          ∙
+                          <span>
+                              채팅 15
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 전자기기 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/아이폰 13 128GB 그린1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/아이폰 13 128GB 그린.jpg" data-lightbox="portfolio5"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">아이폰 13 128GB 그린 팝니다</h4>
+                        <div class="card-price ">
+                          300,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 강남구 역삼동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 42
+                            </span>
+                          ∙
+                          <span>
+                              채팅 22
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 전자기기 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/에어팟 프로맥스1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/에어팟 프로맥스.jpg" data-lightbox="portfolio6"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">에어팟 프로맥스 두번밖에 안썼어요~</h4>
+                        <div class="card-price ">
+                          600,000
+                        </div>
+                        <div class="card-region-name">
+                          서울 강동구 둔촌동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 23
+                            </span>
+                          ∙
+                          <span>
+                              채팅 11
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가전 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/위닉스 제습기1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/위닉스 제습기.jpg" data-lightbox="portfolio7"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">여름철 필수 제습기 팔아요</h4>
+                        <div class="card-price ">
+                          30,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 관악구 난곡동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 10
+                            </span>
+                          ∙
+                          <span>
+                              채팅 10
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가구 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/이케아 3단 트롤리1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/이케아 3단 트롤리.jpg" data-lightbox="portfolio8"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">이케아 3단 트롤리입니다</h4>
+                        <div class="card-price ">
+                          50,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 영등포구 대림동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 29
+                            </span>
+                          ∙
+                          <span>
+                              채팅 21
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가전 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/전자레인지1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/전자레인지.jpg" data-lightbox="portfolio9"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">자취생 필수 전자레인지!</h4>
+                        <div class="card-price ">
+                          50,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 구로구 구로동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 30
+                            </span>
+                          ∙
+                          <span>
+                              채팅 46
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가전 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/냉장고1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/냉장고.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">제 자취 인생을 함께 한 냉장고 팝니다ㅠㅠ</h4>
+                        <div class="card-price ">
+                          70,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 강동구 암사동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 16
+                            </span>
+                          ∙
+                          <span>
+                              채팅 7
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가구 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/서랍장1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/서랍장.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">서랍장 팔아요 가져가셔야되요</h4>
+                        <div class="card-price ">
+                          5,000원
+                        </div>
+                        <div class="card-region-name">
+                          강원도 춘천시 교동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 16
+                            </span>
+                          ∙
+                          <span>
+                              채팅 7
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 전자기기 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/마샬1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/마샬.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">마샬 블루투스 스피커 팝니다.</h4>
+                        <div class="card-price ">
+                          50,000원
+                        </div>
+                        <div class="card-region-name">
+                          제주 제주시 애월읍
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 8
+                            </span>
+                          ∙
+                          <span>
+                              채팅 12
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 의류 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/매장정리1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/매장정리.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">매장 점포정리 새옷들이에요</h4>
+                        <div class="card-price ">
+                          10,000원
+                        </div>
+                        <div class="card-region-name">
+                          경기 성남시 중원구 상대원3동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 48
+                            </span>
+                          ∙
+                          <span>
+                              채팅 69
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 의류 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/몽클레어1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/몽클레어.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">몽클레어 보에딕 블랙 1사이즈</h4>
+                        <div class="card-price ">
+                          1,111원
+                        </div>
+                        <div class="card-region-name">
+                          서울 서초구 잠원동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 12
+                            </span>
+                          ∙
+                          <span>
+                              채팅 23
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 전자기기 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/블루투스 넥밴드1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/블루투스 넥밴드.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">LG 블루투스 넥밴드 이어폰 판매합니다~! (HBS-1100)</h4>
+                        <div class="card-price ">
+                          10,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 관악구 조원동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 3
+                            </span>
+                          ∙
+                          <span>
+                              채팅 24
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가전 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/삼성스마트티비1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/삼성스마트티비.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">삼성 스마트 티비 65인치 팝니다</h4>
+                        <div class="card-price ">
+                          200,000원
+                        </div>
+                        <div class="card-region-name">
+                          서울 성동구 성수1가 제1동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 8
+                            </span>
+                          ∙
+                          <span>
+                              채팅 12
+                            </span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item 가구 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/선반1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4"></h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/선반.jpg" data-lightbox="portfolio10"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h4 class="card-title">선반 팝니다</h4>
+                        <div class="card-price ">
+                          5,000원
+                        </div>
+                        <div class="card-region-name">
+                          충남 보령시 명천동
+                        </div>
+                        <div class="card-counts">
+                            <span>
+                              관심 5
+                            </span>
+                          ∙
+                          <span>
+                              채팅 24
+                            </span>
+                        </div>
+                      </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">주소</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>서울특별시 구로구 디지털로 30길 28, 609호</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1544-9796</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>cs@daangnservice.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/daangn"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.youtube.com/channel/UC8tsBsQBuF7QybxgLmStihA"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://blog.naver.com/daangn"><img src="img/btnW_아이콘원형.png" width="20px"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/daangnmarket/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a class="btn btn-link" href="index.html">홈</a>
+                    <a class="btn btn-link" href="used.html">중고거래</a>
+                    <a class="btn btn-link" href="part-time-job.html">알바</a>
+                    <a class="btn btn-link" href="real-estate.html">부동산 직거래</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">자주묻는 질문</a>
+                    <a class="btn btn-link" href="">회사 소개</a>
+                    <a class="btn btn-link" href="">인재 채용</a>
+                    <a class="btn btn-link" href="https://play.google.com/store/apps/details?id=com.towneers.www">앱 다운로드</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">검색</h4>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Text">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">오이마켓</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
